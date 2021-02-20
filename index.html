@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>School Managment System</title>
+		<link rel="stylesheet" href="static/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/style.css">
+		
+	</head>
+	<body >
+		<div class="container">
+			<div class="frame">
+				<form class="form-signin"  onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" >	
+
+		  <label class="validation-error " id="nameValidationError">Student Name</label>
+		  <input  type="text" id="name" class="form-styling"  />
+		  
+          <label >ID Number</label>
+		  <input class="form-styling" type="number" id="idNumber" />
+		  
+		  <label >GPA</label>
+		  <input class="form-styling" type="number" id="gpa" />
+		  
+          <div class="btn-animate ">
+			<a class="btn-signin"  id="submit"  >Add</a>
+		  </div>
+		  <div >
+				<input type="submit" value="save edit" class="test" >
+			</div>
+
+		</form>
+		  
+				
+      		</div>       
+  		</div>
+    
+  
+		  <table class="table table-bordered table-dark" id="myTable">
+			<thead>
+			  <tr>
+				<th scope="col">#</th>
+				<th scope="col">Student Name</th>
+				<th scope="col">ID Number</th>
+				<th scope="col">GPA</th>
+			  </tr>
+			</thead>
+			
+		  </table>
+		  <form class="form-signin"  onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+			
+		  </form>	
+		<script src="./src/main.js"></script>
+	</body>
+</html>
